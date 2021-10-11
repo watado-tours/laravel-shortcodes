@@ -48,7 +48,7 @@ class Factory extends IlluminateViewFactory {
         $path = $this->finder->find($view);
         $data = array_merge($mergeData, $this->parseData($data));
 
-        $this->callCreator($view = new View($this, $this->getEngineFromPath($path), $view, $path, $data, $this->shortcode));
+        $this->callCreator($view = new View($this, $this->getEngineFromPath($path), $view, $path, $this->shortcode, $data));
 
         return $view;
     }
