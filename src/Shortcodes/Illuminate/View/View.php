@@ -23,7 +23,7 @@ class View extends IlluminateView {
      * @param array $data
      * @param Shortcode $shortcode
      */
-    public function __construct(Factory $factory, EngineInterface $engine, $view, $path, $data = [], Shortcode $shortcode)
+    public function __construct(Factory $factory, EngineInterface $engine, $view, $path, Shortcode $shortcode, $data = [])
     {
         parent::__construct($factory, $engine, $view, $path, $data);
 
